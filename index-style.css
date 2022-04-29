@@ -1,5 +1,5 @@
 :root{
-    --eggshell: #F2F2F2;
+    --eggshell: #f2f2f2;
     --bluegreen: #28594B;
     --textblue: #2C3740;
     --pastel: #F2B6A0;
@@ -15,12 +15,17 @@
 }
 
 body {
-    background-color: var(--eggshell);
+    /* height: 100vh; */
+    background-color: black;
+    background: linear-gradient(0deg, var(--pastel), var(--eggshell));
+
 }
 
 header {
+    width: 100vw;
     padding: 20px;
-    background-color: var(--bluegreen);
+    /* background-color: var(--bluegreen); */
+    background: linear-gradient(180deg, var(--bluegreen), transparent);
 }
 
 header h1 {
@@ -48,41 +53,83 @@ header nav ul li {
 header nav ul li a {
     color:var(--eggshell);
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pathway {
     display: inline-block;
-    border-radius: 15px;
-    height:300px;
-    background-color: var(--pastel);
+    /* border-radius: 15px; */
+    height:450px;
+    /* background-color: var(--pastel); */
     box-shadow: 10px 5px 5px var(--textblue);
     margin :10px; 
 }
 
-.latest {
-   height: 500px;
-   width: 450px; 
+.card {
+    width: 90%;
+    max-width: 480px;
+    color: #fff;
+    text-align: center;
+    padding:50px 35px;
+    border: 1px solid #ffffff55;
+    border-radius: 20px;
+    background: #ffffff33;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(5px);
+
 }
 
+.latest {
+   height: 550px;
+   width: 480px; 
+}
+
+#examples, #about, #contact {
+    padding-left: 50px;
+}
 
 .pathway *{
     font-weight: bold;
 }
+
 .pathway img {
     border-radius: 15px;
-    height: 250px;
+    height: 100%;
+    width: 70%;
 }
 
 .latest img{
-    height: 450px;
+    height: 90%;
+    width: 100%;
 }
+
 
 #resume img{
     display:inline-block;
-    width:797px;
-    border-radius: 15px;
+    width:250px;
+    border-radius: 180px;
     /* margin: 5px solid var(--mossy); */
 }
 
+#resume p {
+    font-size: 18px;
+    margin:10px auto;
+    max-width: 330px;
+}
 
+@media screen and (min-width:798px) {
+    header {
+        position: fixed;
+    }
+    #top-spacer {
+        line-height: 150px;
+    }
+    
+}
 @media screen and (max-width: 797px) {
     
     header{
