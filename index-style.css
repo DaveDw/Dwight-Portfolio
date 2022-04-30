@@ -88,9 +88,6 @@ header nav ul li a {
    width: 480px; 
 }
 
-#examples, #about, #contact {
-    padding-left: 50px;
-}
 
 .pathway *{
     font-weight: bold;
@@ -107,6 +104,29 @@ header nav ul li a {
     width: 100%;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.examples {
+    display: grid 2;
+    
+}
+
+.examples, #about, #contact {
+    padding-left: 50px;
+}
+
+#about img {
+    padding-left: 200px;
+    width:1500px;
+    
+}
+
+#resume .card {
+    max-width:800px;
+}
 
 #resume img{
     display:inline-block;

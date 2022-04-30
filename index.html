@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Dwight Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/images/Dave-icon.jpg" />
     <link rel="stylesheet" type="text/css" href="index-style.css" />
 </head>
@@ -35,12 +36,15 @@
     <br id="top-spacer">
 
     <section class="container" id="resume">
-        <div class="card">
+        <div class="card" data-tilt>
             <h2>The Front End Developer You've Been Looking For</h2>
             <br>
             <img src="assets/images/Dave-icon.jpg" alt="a_picture_of_David">
             <br>
             <p>I learned to code from a mixture of college and a University of Pennsylvania Coding Bootcamp</p>
+            <a href="https://github.com/DaveDw" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/david-dwight-0b7566230/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="assets/images/Resume-David-Dwight-2.pdf" target="_blank"><i class="bi bi-file-person"></i></a>
         </div>
 
     </section>
@@ -48,46 +52,50 @@
     <br>
     <br>
     <br>
-    
-    <section id="examples">
-        <h2>Showcasing Some Skill</h2>
-        <br>
-        <div class="pathway latest card" id="retail">
-            <p>*My Latest Work*</p>
-            <br>
-            <a href="https://davedw.github.io/dog-breed-finder/" target="_blank"><img
-                    src="assets/images/dog-adoption-icon.png" alt="dog_adoption_link"></a>
-            <br>
-            <a href="https://davedw.github.io/dog-breed-finder/" target="_blank">Dog Adoption Search Tool</a>
-        </div>
-        <div class="pathway card" id="refactor">
-            <a href="https://wonderful-poincare-ac36b1.netlify.app/" target="_blank"><img
-                    src="assets/images/refactor-icon.png" alt="refactor_link"></a>
-            <br>
-            <a href="https://wonderful-poincare-ac36b1.netlify.app/" target="_blank">A Website I Refactored</a>
-        </div>
-        <div class="pathway card" id="jcole">
-            <a href="jcole/JCole-website.html" target="_blank"><img src="assets/images/refactor-icon.png"
-                    alt="j.cole_website_link"></a>
-            <br>
-            <a href="jcole/JCole-website.html" target="_blank">A Webpage I Made</a>
-        </div>
-        <div class="pathway card" id="planner">
-            <a href="https://davedw.github.io/Dwight_Day_Planner/" target="_blank"><img
-                    src="assets/images/day-planner-icon.png" alt="planner_link"></a>
-            <br>
-            <a href="https://davedw.github.io/Dwight_Day_Planner/" target="_blank">My Day Planner</a>
-        </div>
-        <div class="pathway card" id="password">
-            <a href="https://davedw.github.io/Dwight_Password_Generator/" target="_blank"><img
-                    src="assets/images/pass-gen-icon.png" alt="passwords_link"></a>
-            <br>
-            <a href="https://davedw.github.io/Dwight_Password_Generator/" target="_blank">A Password Generator Tool</a>
-        </div>
-    </section>
+
+    <h2>Showcasing Some Skill</h2>
+    <br>
+    <div class="flex" >
+        <section id="examples">
+            <div class="pathway latest card" id="retail" data-tilt>
+                <p>*My Latest Work*</p>
+                <br>
+                <a href="https://davedw.github.io/dog-breed-finder/" target="_blank"><img
+                        src="assets/images/dog-adoption-icon.png" alt="dog_adoption_link"></a>
+                <br>
+                <a href="https://davedw.github.io/dog-breed-finder/" target="_blank">Dog Adoption Search Tool</a>
+            </div>
+            <div class="pathway card" id="refactor" data-tilt>
+                <a href="https://wonderful-poincare-ac36b1.netlify.app/" target="_blank"><img
+                        src="assets/images/refactor-icon.png" alt="refactor_link"></a>
+                <br>
+                <a href="https://wonderful-poincare-ac36b1.netlify.app/" target="_blank">A Website I Refactored</a>
+            </div>
+            <div class="pathway card" id="jcole" data-tilt>
+                <a href="jcole/JCole-website.html" target="_blank"><img src="assets/images/refactor-icon.png"
+                        alt="j.cole_website_link"></a>
+                <br>
+                <a href="jcole/JCole-website.html" target="_blank">A Webpage I Made</a>
+            </div>
+            <div class="pathway card" id="planner" data-tilt>
+                <a href="https://davedw.github.io/Dwight_Day_Planner/" target="_blank"><img
+                        src="assets/images/day-planner-icon.png" alt="planner_link"></a>
+                <br>
+                <a href="https://davedw.github.io/Dwight_Day_Planner/" target="_blank">My Day Planner</a>
+            </div>
+            <div class="pathway card" id="password" data-tilt>
+                <a href="https://davedw.github.io/Dwight_Password_Generator/" target="_blank"><img
+                        src="assets/images/pass-gen-icon.png" alt="passwords_link"></a>
+                <br>
+                <a href="https://davedw.github.io/Dwight_Password_Generator/" target="_blank">A Password Generator
+                    Tool</a>
+            </div>
+        </section>
+    </div>
     <br>
     <article id="about">
         <h2>Who Am I?</h2>
+        <img src="assets/images/resume.png">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem magni porro commodi quam dolor aliquid
             aliquam consectetur id recusandae labore voluptatem, sed saepe fuga quasi hic necessitatibus? Repellendus,
@@ -103,7 +111,7 @@
 
 
     </section>
-    <script src="index-javascript.js"></script>
+    <script src="vanilla-tilt.js"></script>
 </body>
 
 </html>
