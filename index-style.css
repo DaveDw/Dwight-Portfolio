@@ -118,9 +118,15 @@ header nav ul li a {
     padding-left: 50px;
 }
 
-#about img {
-    padding-left: 200px;
-    width:1500px;
+#about {
+    width: 100%;
+    max-width:9000px;
+    
+}
+
+#contact {
+    width: 100%;
+    max-width:9000px;
     
 }
 
@@ -141,6 +147,9 @@ header nav ul li a {
     max-width: 330px;
 }
 
+#showcase {
+    text-align: center;
+}
 @media screen and (min-width:798px) {
     header {
         position: fixed;
